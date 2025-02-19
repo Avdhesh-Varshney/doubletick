@@ -2,6 +2,7 @@ import streamlit as st
 import random
 import os
 
+base = f"{os.path.dirname(__file__)}/{st.secrets['doubletick']['BASE_PATH']}"
 icons = ["🚀", "⚡", "⭐", "🔥", "🎉", "💥", "☀️", "☁️", "🎈", "💡", "⚙️", "🔔", "🌍", "🏆", "📝"]
 sections_items = {
     "Outgoing Messages": "outgoing_messages", "Chat Messages": "chat_messages",
@@ -11,7 +12,6 @@ sections_items = {
 }
 
 if __name__ == "__main__":
-    base = st.secrets['doubletick']['BASE_PATH']
     sections = {name: f"{base}/{path}" for name, path in sections_items.items()}
     all_pages = {"": [st.Page(page=f"{base}/home.py", title="Home", icon="🏠")]}
     all_pages.update({
