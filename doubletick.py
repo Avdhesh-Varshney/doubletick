@@ -2,7 +2,9 @@ import streamlit as st
 import random
 import os
 
-base = f"{os.path.dirname(__file__)}/{st.secrets['doubletick']['BASE_PATH']}"
+base = f"{os.path.dirname(__file__)}/doubletick"
+st.write(os.path.dirname(__file__), base)
+
 icons = ["🚀", "⚡", "⭐", "🔥", "🎉", "💥", "☀️", "☁️", "🎈", "💡", "⚙️", "🔔", "🌍", "🏆", "📝"]
 sections_items = {
     "Outgoing Messages": "outgoing_messages", "Chat Messages": "chat_messages",
