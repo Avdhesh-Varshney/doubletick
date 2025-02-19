@@ -7,8 +7,7 @@ icons = ["🚀", "⚡", "⭐", "🔥", "🎉", "💥", "☀️", "☁️", "🎈
 sections_items = {
     "Outgoing Messages": "outgoing_messages", "Chat Messages": "chat_messages",
     "Broadcast Groups": "broadcast_groups", "Template": "template",
-    "Customer": "customer", "Team Member": "team_member", "Wallet": "wallet",
-    "Teams": "teams", "Roles": "roles", "Media": "media", "Webhook": "webhook"
+    "Wallet": "wallet", "Media": "media"
 }
 
 if __name__ == "__main__":
